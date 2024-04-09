@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #333;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+.slide .content {
+  position: absolute;
+  bottom: 70px;
+  left: -600px;
+  opacity: 0;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.637);
+  border: 1px solid rgba(62, 60, 60, 0.316);
+  color: #333;
+  padding: 35px;
+}
+
+.slide .content h1 {
+  margin-bottom: 10px;
+}
+
+.slide.current .content {
+  opacity: 1;
+  transform: translateX(600px);
+  transition: all 0.7s ease-in-out 0.3s;
+}
+
+.buttons button#next {
+  position: absolute;
+  top: 40%;
+  right: 15px;
+}
+
+.buttons button#prev {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+}
+
+.buttons button {
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  color: #044479;
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+  background-color: #9ba6b7bc;
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 500px) {
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+
+  .slide.current .content {
+    transform: translateY(-300px);
+  }
+}
+
+
+
+/* Backgorund Images */
+ 
+.slide:first-child {
+  background: url('anl.jpg') no-repeat
+    center top/cover;
+}
+.slide:nth-child(2) {
+  background: url('str.jpg') no-repeat
+    center top/cover;
+}
+.slide:nth-child(3) {
+  background: url('jon.jpg') no-repeat
+    center top/cover;
+}
+/* .slide:nth-child(4) {
+  background: url('https://source.unsplash.com/yXpA_eCbtzI/1600x900') no-repeat
+    center top/cover;
+}
+.slide:nth-child(5) {
+  background: url('https://source.unsplash.com/ULmaQh9Gvbg/1600x900') no-repeat
+    center top/cover;
+} 
+.slide:nth-child(6)  {
+  background: url('https://source.unsplash.com/ggZuL3BTSJU/1600x900') no-repeat
+    center center/cover;
+} */
