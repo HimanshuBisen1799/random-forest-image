@@ -1,146 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Full Screen Slider</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="slider">
-      <div class="slide current">
-        <div class="content">
-          <h1>ALNAKIYA</h1>
-          <p>
-            Our consulting sparked a digital shilf, integrating process automation and boosting customer engagement for a decade-old firm
-Our ongoing collaborative journey with Alnakiya, a Dubai-based firm started with creating a customer-engaging website.
- <!-- Our joint efforts extended to optimizing billing, inventory and customer relationship management and introducing efficient automation, fostering a supportive partnership for their seamless digital transformation. -->
-
-          </p>
+    <head>
+        <title>Responsive Website</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap" rel="stylesheet">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+      </head>
+      
+      <body id="bodyScroll">
+        <!-- Nav Section -->
+        <div id="divOverlay" onclick="closeNav()"></div>
+       
+        <div class=sidenav-header>
+            <div class="navbar-logo">Softwarethinker</div>
+          <div class="menu-btn" onclick="openNav()">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+          </div>
+          <div class="sidenav" id="mySidenav">
+            <a href="#home" onclick="closeNav()">1. <p>Home</p></a>
+            <a href="#about" onclick="closeNav()">2. <p>About Us</p></a>
+            <a href="#experience" onclick="closeNav()">3. <p>Our Services</p></a>
+            <a href="#projects" onclick="closeNav()"> 4.<p>Our Products</p></a>
+            <a href="#contact" onclick="closeNav()">5. <p>Contact</p></a>
+            <!-- <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <p id="CV_button">CV</p>
+            </a> -->
+          </div>
         </div>
-      </div>
-      <div class="slide">
+        <a class="contact_sidelink" href="#contact"> Contact Me! </a>
         <div class="content">
-          <h1>EAZYPOSY</h1>
-          <p>
-            A Development Journey From Ideation To MDP
-We partnered with EazyPosy's founder, guiding the entire development process from ideation to creating a Minimum Delightful Product (MDP), blending technical expertise with founder's vision for a seamless product realization.
-
-          </p>
+          <!-- Hero Section -->
+          
+          <!-- About Me Section -->
+         
+         
+          <!-- Project Section -->
+          <div id="projects" class="project_section">
+              <h1 class="subt">Things I've Built</h1>
+            <div class="carousel_container">
+              <div class="carousel">
+                <div class="item">
+                  <div class="item_title">
+                    <h1>Mock Trading App</h1>
+                  </div>
+                  <div class="item_content">
+                    <div class="project_skills">
+                      <h3>Tech Stack:</h3>
+                      <ul>
+                        <li><img src="https://raw.githubusercontent.com/patil-prajwal/Tech-Stack-Icons/661b1305f52d49de94f6640f8bbeec93dba9dc8a/Icons/python.svg"></li>
+                        <li><img src="https://raw.githubusercontent.com/patil-prajwal/Tech-Stack-Icons/661b1305f52d49de94f6640f8bbeec93dba9dc8a/Icons/flask.svg"></li>
+                        <li><img src="https://raw.githubusercontent.com/patil-prajwal/Tech-Stack-Icons/661b1305f52d49de94f6640f8bbeec93dba9dc8a/Icons/css-3.svg"></li>
+                        <li><img src="https://raw.githubusercontent.com/patil-prajwal/Tech-Stack-Icons/661b1305f52d49de94f6640f8bbeec93dba9dc8a/Icons/html-5.svg"></li>
+                        <li><img src="https://raw.githubusercontent.com/patil-prajwal/Tech-Stack-Icons/661b1305f52d49de94f6640f8bbeec93dba9dc8a/Icons/sqlite.svg"></li>
+                        <li><img src="https://raw.githubusercontent.com/patil-prajwal/Tech-Stack-Icons/661b1305f52d49de94f6640f8bbeec93dba9dc8a/Icons/javascript.svg"></li>
+                        <li><img src="https://raw.githubusercontent.com/get-icon/geticon/fc0f660daee147afb4a56c64e12bde6486b73e39/icons/jquery.svg"></li>
+                    </div>
+                    <div class="project_description">
+                      <p>Used Flask to create a mock trading account web app. The app first prompts the user to create an account. Once logged in, the user is gifted an imaginary $10,000 with which to "buy" and "sell" stocks. Live stock prices are used by querying the IEX API. From their account, the user can manage their portfolio, review their transaction history, or deposit more imaginary currency.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title">
+                    <h1>Calculator App</h1>
+                  </div>
+                  <div class="item_content">
+                    <div class="project_skills">
+                      <h3>Tech Stack:</h3>
+                      <ul>
+                        <li><img src="https://raw.githubusercontent.com/patil-prajwal/Tech-Stack-Icons/661b1305f52d49de94f6640f8bbeec93dba9dc8a/Icons/html-5.svg"></li>
+                        <li><img src="https://raw.githubusercontent.com/patil-prajwal/Tech-Stack-Icons/661b1305f52d49de94f6640f8bbeec93dba9dc8a/Icons/css-3.svg"></li>
+                        <li><img src="https://raw.githubusercontent.com/patil-prajwal/Tech-Stack-Icons/661b1305f52d49de94f6640f8bbeec93dba9dc8a/Icons/javascript.svg"></li>
+                        <li><img src="https://raw.githubusercontent.com/get-icon/geticon/fc0f660daee147afb4a56c64e12bde6486b73e39/icons/bootstrap.svg"></li>
+                    </div>
+                    <div class="project_description">
+                      <p>This was built in practice of vanilla JavaScript and DOM manipulation. The app easily handles arithmetic opertions and has all of the functionality of a generic calculator. I used event listener methods to call specific functions based on user input. An intuitive design was created by styling a familiar user interface using CSS Grid.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title">
+                    <h1>Portfolio</h1>
+                  </div>
+                  <div class="item_content">
+                    <div class="project_skills">
+                      <h3>Tech Stack:</h3>
+                      <ul>
+                        <li><img src="https://raw.githubusercontent.com/patil-prajwal/Tech-Stack-Icons/661b1305f52d49de94f6640f8bbeec93dba9dc8a/Icons/html-5.svg"></li>
+                        <li><img src="https://raw.githubusercontent.com/patil-prajwal/Tech-Stack-Icons/661b1305f52d49de94f6640f8bbeec93dba9dc8a/Icons/css-3.svg"></li>
+                        <li><img src="https://raw.githubusercontent.com/patil-prajwal/Tech-Stack-Icons/661b1305f52d49de94f6640f8bbeec93dba9dc8a/Icons/jquery.svg"></li>
+                    </div>
+                    <div class="project_description">
+                      <p>This entire website was built from scratch. In order to best learn the basics of web development, I decided not to use any frameworks or libraries, so anything you see on this page (good or not-so-good) was designed and built by me in vanilla CSS and HTML. Dynamic elements were created with JQuery.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+          </div>
         </div>
-      </div>
-      <div class="slide">
-        <div class="content">
-          <h1>KWALITY QUANTUM</h1>
-          <p>
-            How Strategic Process Automation Ignited Remarkable Growth in a Time-Honored Business.
-Our partnership and insight drastically improved a 40-year-old firm's operational efficiency by developing tailored tools that optimized billing, inventory, vendor, HR, and customer/credit management processes.
-          </p>
-        </div>
-      </div>
-      <!-- <div class="slide">
-        <div class="content">
-          <h1>Slide Four</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-            maxime, voluptatibus labore doloremque vero!
-          </p>
-        </div>
-      </div>
-      <div class="slide">
-        <div class="content">
-          <h1>Slide Five</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-            maxime, voluptatibus labore doloremque vero!
-          </p>
-        </div>
-      </div>
-      <div class="slide">
-        <div class="content">
-          <h1>Slide Six</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-            maxime, voluptatibus labore doloremque vero!
-          </p>
-        </div>
-      </div> -->
-    </div>
-    <div class="buttons">
-      <button id="prev"><i class="fas fa-arrow-left"></i></button>
-      <button id="next"><i class="fas fa-arrow-right"></i></button>
-    </div>
-
-    <script >
-        const slides = document.querySelectorAll('.slide');
-const next = document.querySelector('#next');
-const prev = document.querySelector('#prev');
-const auto = true; // Auto scroll
-const intervalTime = 5000;
-let slideInterval;
-
-const nextSlide = () => {
-  // Get current class
-  const current = document.querySelector('.current');
-  // Remove current class
-  current.classList.remove('current');
-  // Check for next slide
-  if (current.nextElementSibling) {
-    // Add current to next sibling
-    current.nextElementSibling.classList.add('current');
-  } else {
-    // Add current to start
-    slides[0].classList.add('current');
-  }
-  setTimeout(() => current.classList.remove('current'));
-};
-
-const prevSlide = () => {
-  // Get current class
-  const current = document.querySelector('.current');
-  // Remove current class
-  current.classList.remove('current');
-  // Check for prev slide
-  if (current.previousElementSibling) {
-    // Add current to prev sibling
-    current.previousElementSibling.classList.add('current');
-  } else {
-    // Add current to last
-    slides[slides.length - 1].classList.add('current');
-  }
-  setTimeout(() => current.classList.remove('current'));
-};
-
-// Button events
-next.addEventListener('click', e => {
-  nextSlide();
-  if (auto) {
-    clearInterval(slideInterval);
-    slideInterval = setInterval(nextSlide, intervalTime);
-  }
-});
-
-prev.addEventListener('click', e => {
-  prevSlide();
-  if (auto) {
-    clearInterval(slideInterval);
-    slideInterval = setInterval(nextSlide, intervalTime);
-  }
-});
-
-// Auto slide
-if (auto) {
-  // Run next slide at interval time
-  slideInterval = setInterval(nextSlide, intervalTime);
-}
-
-    </script>
-  </body>
+        <script src="script.js"></script>
+      </body>
 </html>
