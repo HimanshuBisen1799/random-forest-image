@@ -441,3 +441,265 @@ img, .page3 video {
     height: auto;
     padding: 1rem;
 }
+
+
+/* page 4 css  */
+
+/* himanshu code */
+
+.page-image-expand{
+    width: 100vw;
+    height: 110vh;
+    /* background: #000; */
+    padding: 16vh 5vw;
+  }
+  .page-image-expand
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 2px;
+    margin: 0 auto;
+    min-height: 80vh;
+  }
+  .page-image-expand
+  .item-wrapper {
+    font-family: monospace;
+    font-size: 18px;
+    flex: 1 0 auto;
+    text-align: center;
+    min-height: 90vh;
+    position: relative;
+    background: center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    transition: flex 0.5s;
+    -webkit-transition: flex 0.5s;
+    -moz-transition: flex 0.5s;
+    -o-transition: flex 0.5s;
+  }
+  .item-wrapper h5{
+    font-weight: 900;
+    font-size: 17px;
+    position: absolute;
+    transform: translateY(0%);
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+    background-color: #f5f5dc9d;
+    background-color: #aaaa9dd6;
+    border-radius: 2px;
+    line-height: 19px;
+    margin-top: 40vh;
+    box-shadow: 1px  solid black;
+  
+    transform: rotate(90deg);
+    padding: 20px 28vh;
+  
+   
+  }
+  .hhide{
+    display: none;
+  }
+   .w1 h6{
+    display: none;
+   }
+  .page-image-expand
+  .item-wrapper.expand {
+    flex-grow: 10;
+  }
+  .page-image-expand
+  .item-wrapper.w1 {
+    background-image: url("https://img.freepik.com/free-psd/cosmetic-creme-mockup_23-2147649079.jpg?t=st=1713280223~exp=1713283823~hmac=2a83709daef67eadf102984767fc78d421b409f392b04824e9fc380f5eda0829&w=360");
+  
+  }
+  .page-image-expand
+  .item-wrapper.w2 {
+    background-image: url("https://img.freepik.com/free-photo/front-view-healthy-argan-oil-arrangement_23-2148989093.jpg?t=st=1713280851~exp=1713284451~hmac=47b520c8b704d6306d33402b94111070eaff3607ed868c1cdd3fa4daa74385a6&w=360");
+  
+  }
+  .page-image-expand
+  .item-wrapper.w3 {
+    background-image: url("https://img.freepik.com/free-photo/natural-products-arrangement-high-angle_23-2148899416.jpg?t=st=1713280905~exp=1713284505~hmac=56e11afb1b7bee0ad3601fe0307d07831b60eefdc2a38234a6f5ba2fc52781f9&w=360");
+  
+  }
+  .page-image-expand
+  .item-wrapper.w4 {
+    background-image: url("https://img.freepik.com/free-photo/composition-jojoba-oil-dropper_23-2149022363.jpg?t=st=1713280992~exp=1713284592~hmac=95b84af68ea120993e2bde180fd752a11781bdf48ba54188411387383436d0a3&w=360");
+  }
+  .page-image-expand
+  .item-wrapper p {
+    font-weight: 900;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: translateY(-500%);
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+    /* background-color: #f5f5dc; */
+    background-color: #f5f5dc76;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 35vh;
+    margin-left: -15vw;
+    width: 18vw;
+    /* text-align: justify; */
+  }
+  .page-image-expand .item-wrapper p.active {
+    transform: none; /* Reset any transformations */
+    opacity: 1; /* Ensure the element is visible */
+  }
+  
+  .page-image-expand .item-wrapper p {
+    font-weight: 700;
+    font-size: 15px;
+    transform: perspective(1000px) rotateX(30deg) rotateY(-30deg) translateY(-500%);
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+    background-color: #f5f5dc76;
+    border-radius: 14px;
+    padding: 20px;
+    margin-top: 35vh;
+    margin-left: -15vw;
+    width: 18vw;
+   
+    letter-spacing: 1px;
+  
+  }
+  
+  .page-image-expand
+  .item-wrapper p.active {
+    transform: translateY(0);
+  }
+  .page-image-expand h6{
+    text-align: center;
+    font-size: 2.2vw;
+    padding: 1vw;
+    font-weight: 400;
+    color: #302f2f;
+  
+    
+  }
+  
+  
+  
+  /* Small devices (phones, 576px and up) */
+  @media (max-width: 576px) {
+    .page-image-expand {
+      padding: 1vh 1vw;
+      width: 100vw;
+      /* background-color: #c01616; */
+      height: 80vh;
+      margin-top: -14vh;
+    }
+    .page-image-expand h6{
+      text-align: center;
+      font-size: 6vw;
+      padding: 2vw;
+      font-weight: 500;
+      color: #000;
+      
+    }
+    .page-image-expand
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 2px;
+    margin: 0 auto;
+    height: 50vh;
+    min-height: 50vh;
+    width: 100%;
+  
+  }
+  .page-image-expand
+  .item-wrapper {
+    font-family: monospace;
+    font-size: 18px;
+    flex: 1 0 auto;
+    text-align: center;
+    min-height: 60vh;
+    
+    background: center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    transition: flex 0.5s;
+    -webkit-transition: flex 0.5s;
+    -moz-transition: flex 0.5s;
+    -o-transition: flex 0.5s;
+  }
+  
+  .page-image-expand .item-wrapper p {
+    font-weight: 700;
+    font-size: 7px;
+    transform: perspective(1000px) rotateX(30deg) rotateY(-30deg) translateY(-500%);
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+    background-color: #f5f5dc76;
+    border-radius: 14px;
+    padding: 20px;
+    margin-top: 15vh;
+    margin-left: -15vw;
+    width: 28vw;
+   
+    letter-spacing: 1px;
+  
+  }
+  .page-image-expand
+  .item-wrapper.expand {
+    flex-grow: 18;
+  }
+  .item-wrapper h5{
+    font-weight: 900;
+    font-size: 15px;
+    position: absolute;
+    transform: translateY(0%);
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+    /* background-color: #89897b9d; */
+   
+    border-radius: 2px;
+    line-height: 19px;
+    margin-top: 25vh;
+    box-shadow: 1px  solid black;
+  
+    transform: rotate(90deg);
+    padding: 12px 20vh;
+  
+   
+  }
+  
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+   
+  
+  
+  
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  

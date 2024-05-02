@@ -207,3 +207,45 @@ scroll.addEventListener("mousemove", (e) => {
 	var scrolling = (element - scrollX) * 2;
 	scroll.scrollLeft = scrollLeft - scrolling;
 });
+
+// page exapnt
+
+// himanshu code image
+
+document.addEventListener("DOMContentLoaded", function() {
+  const wrappers = document.querySelectorAll(".item-wrapper");
+  const wrapArray = Array.from(wrappers);
+
+  const defaultItem = wrapArray[0]; // Assuming the first item should have the expand class
+
+  defaultItem.classList.add("expand");
+  const text = defaultItem.querySelector('p'); // Select the <p> element inside the default item
+  text.classList.add('active');
+
+  wrapArray.forEach(item => {
+    const h5 = item.querySelector('h5'); // Select the <h5> element inside the item
+
+    item.addEventListener("mouseover", function() {
+      wrapArray.filter(others => {
+        if (others !== item) {
+          others.classList.remove("expand");
+          const otherText = others.querySelector('p'); // Select the <p> element inside other items
+          otherText.classList.remove('active'); // Remove active class from other items' <p> elements
+        }
+      });
+      this.classList.add("expand");
+      const activeText = this.querySelector('p'); // Select the <p> element inside the hovered item
+      activeText.classList.add('active'); // Add active class to the hovered item's <p> element
+
+      h5.style.display = 'none'; // Hide the h5 element on hover
+    });
+
+    item.addEventListener("mouseout", function() {
+      this.classList.remove("expand");
+      const text = this.querySelector('p'); // Select the <p> element inside the item
+      text.classList.remove('active'); // Remove active class from the item's <p> element
+
+      h5.style.display = 'initial'; // Display the h5 element on hover out
+    });
+  });
+});
