@@ -18,6 +18,13 @@ section {
     width: 100vw;
     height: 100vh;
 }
+@media only screen and (max-width: 768px){
+    .page1
+section {
+    width: 100vw;
+    height: 65vh;
+}
+}
 .page1
 .swiper-container {
     width: 100%;
